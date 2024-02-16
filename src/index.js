@@ -6,7 +6,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import {Provider} from 'react-redux';
 import store from './redux/store';
 import axios from "axios";
-axios.defaults.baseURL="https://blog-api-jqv1.onrender.com";
+axios.defaults.baseURL="https://blog-api-jqv1.onrender.com/api";
 
 
 
