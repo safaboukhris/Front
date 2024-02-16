@@ -1,0 +1,138 @@
+/* AddEditBlog.css */
+
+.addForm {
+    width: 600px;
+    height: 450px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+    box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+    border-bottom-left-radius:100px;
+    border-top-right-radius: 100px;
+  }
+  
+.addInput{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #628F07;
+  }
+.addTextA{
+  width: 100%;
+  height: 85px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #628F07;
+}
+  
+.addInput[type="submit"] {
+    background-color: #F5C61E;
+    color: white;
+    cursor: pointer;
+    width: 120px;
+    border-radius: 15px;
+    margin-left: 38%;
+    margin-top: 20px;
+  }
+  
+.addInput[type="submit"]:hover {
+    background-color: #628F07;
+  }
+.AddCardTitle{
+  text-align: center;
+  color: #628F07;
+}
+  
+
+  /* css of page edit blog */
+  .container-editblog{
+    width: 600px;
+    height: 450px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+    box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+    border-top-left-radius:100px;
+    border-bottom-right-radius: 100px;
+  }
+.editInput{
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #628F07;
+}
+.editTextA{
+  width: 100%;
+  height: 85px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #628F07;
+}
+.editButton{
+  background-color: #F5C61E;
+  color: white;
+  cursor: pointer;
+  width: 120px;
+  border-radius: 15px;
+  border: 1px solid #628F07;
+  height: 35px;
+  margin-left: 38%;
+  margin-top: 20px;
+}
+.editButton:hover{
+  background-color: #628F07;
+}
+.editBlogTitle{
+  text-align: center;
+  color: #628F07;
+}
+
+/* responsive */
+@media screen  and (max-width : 425px){
+  .addForm {
+    width: 70%;
+    height: 350px;
+    margin: 30px auto;
+  }
+  .container-editblog{
+    width: 70%;
+    height: 350px;
+    margin:  30px auto;
+  }
+  .addInput{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 3px;
+  }
+  .editInput{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+  }
+  .addInput[type="submit"] {
+    width: 100px;
+    border-radius: 15px;
+  }
+  .editButton{
+    width: 80px;
+    height: 25px;
+  }
+  .AddCardTitle{
+    font-size: 20px;
+    text-align: center;
+  }
+  .editBlogTitle{
+    text-align: center;
+    font-size: 20px;
+  }
+}

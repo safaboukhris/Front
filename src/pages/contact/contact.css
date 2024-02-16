@@ -1,0 +1,103 @@
+.containerContact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 100px;
+}
+.box{
+    width: 80%;
+    height: 480px;
+    background-color: #628F07;
+    margin-top: 100px;
+    margin-right: 150px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+    box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+
+}
+.contactImg{
+    width: 200px;
+    height: 480px;
+    object-fit: cover;
+    position: relative;
+    bottom: 10%;
+    left: 30%;
+    border-radius: 5px;
+}
+.formContact{
+    width: calc(100% - 260px);
+    padding: 20px;
+}
+.formContact h1{
+    width: calc(100% - 260px);
+    color: #64023b;
+}
+.formContact p{
+    color: #64023b;
+}
+.containerDiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 300px;
+}
+.contactInfo{
+    background-color: #e7db2d;
+    width: 200px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: large;
+    border-radius: 20px;
+}
+.contactInfo p{
+    font-size: 12px;
+    margin-top: 5px;
+    color: #1b0110;
+}
+.contactInfo h4{
+    color: #64023b;
+}
+
+/* responsive */
+@media screen  and (max-width : 425px){
+    .containerContact{
+        margin: auto;
+    }
+    .box{
+        display: none;
+    }
+    .contactImg{
+        display: none;
+    }
+    .formContact{
+        width: 80%;
+        padding: 20px;
+        margin: auto;
+    }
+    .formContact h1{
+        font-size: 12px;
+        text-align: center;
+    }
+    .formContact p{
+        font-size: 10px;
+        text-align: center;
+    }
+    .containerDiv{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px 20px;
+    }
+    .contactInfo{
+        margin: 10px auto;
+    }
+    .formContact form{
+        width: 50%;
+        margin: auto 50px auto auto;
+    }
+}

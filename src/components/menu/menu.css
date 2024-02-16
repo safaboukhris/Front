@@ -1,0 +1,219 @@
+.formnavbar{
+    display: flex;
+    width: 100%;
+    background: #f6f6f6;
+    padding: 0px 3%;
+    transition: 0.5s;
+    border-bottom: 1.5px solid #8ac027;
+    -webkit-box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+    box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.nav-dropdown{
+    display: flex;
+    margin-left: -10px;
+}
+.logo{
+    width: 35px;
+    cursor: pointer;
+}
+.logoTitle{
+    color: #628F07;
+    margin-left: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-right: 50px;
+}
+.logoTitle:hover{
+    color: #F5C61E;
+}
+.logoTitleLink{
+    text-decoration: none;
+}
+ul{
+    flex: 1;
+    list-style: none;
+    text-align: center;
+}
+ul li{
+    display: inline-block;
+    margin: 10px 5px;
+    font-size: 15px;
+    cursor: pointer;
+    color: #F5C61E;
+}
+ul li:hover{
+    color: #628F07;
+}
+.link{
+    font-size: 15px;
+    cursor: pointer;
+    color: #628F07;
+    text-decoration: none;
+    margin-left: 20px;
+}
+.link:hover{
+    color: #F5C61E;
+}
+.userNamee{
+    margin-top: 10px;
+    color: #628F07;
+}
+.logoutIcon{
+    margin-top: 10px;
+    margin-left: -20px;
+}
+.toggle-icon{
+    width: 30px;
+    cursor: pointer;
+    margin-left :-20px; 
+}
+.dark .formnavbar{
+    background:#263238;
+    color: #fff;
+}
+.dark.search-box{
+    background:#fff;
+}
+.dark.search-box input{
+    color: #222;
+}
+.dark.search-box input::placeholder{
+    color: #222;
+}
+.formnavbar.sticky {
+    background-color: rgb(255,255,255,0.7)
+}
+.searchDivv{
+    display: flex;
+    align-items: center;
+    padding: 6px 20px;
+    border-radius: 50px;
+    margin-right: 130px;
+}
+.searchButton{
+    position: relative;
+    right: -170px;
+    border: none;
+    background: transparent;
+}
+.searchInput{
+    position: absolute;
+    cursor: pointer;
+    border-bottom:  2px solid green;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 10px;
+    padding: 3px;
+    width: 200px;
+    height:32px ;
+    background: transparent;
+}
+
+
+/* responsive css */
+@media screen  and (max-width : 425px){
+    .formnavbar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin:auto;
+        padding:auto;
+    }
+    .nav-dropdown{
+        display: flex;
+        flex-direction: column;
+    }
+    .logoTitle{
+        display:none;
+    }
+    .logo{
+        display:none;
+    }
+    .searchButton{
+        display:none;
+    }
+    .searchInput{
+        width: 60px;
+        margin: auto auto auto 30px;
+    }
+    .userNamee{
+        display: none;
+        margin: auto;
+    }
+    .toggle-icon{
+        width: 20px;
+        margin:auto ;
+    }
+    .link{
+        margin: auto;
+        text-align:center;
+    }
+    .logoutIcon{
+        width: 10px;
+        margin:20px auto auto auto ;
+    }
+}
+
+/* responsive menu */
+@media screen and (max-width: 768px) {
+    .formnavbar {
+        flex-direction: column;
+        align-items: center;
+        margin:auto;
+        padding:auto;
+    }
+    .logoTitle {
+        margin-top: 0;
+    } 
+    ul {
+        display: none;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    ul.open {
+        display: flex;
+    }
+
+    ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .searchInput {
+        margin-left: auto;
+    }
+
+    .toggle-icon {
+        margin-left: 0;
+        margin-right: 20px;
+    }
+    .searchButton {
+        display: none;
+    }
+}
+@media screen and (max-width: 576px) {
+    .formnavbar {
+        flex-direction: column;
+        align-items: center;
+        margin:auto;
+        padding:auto;
+    }
+    ul {
+        margin-top: 10px;
+    }
+
+    .searchInput {
+        font-size: 14px; 
+    }
+
+    .searchButton {
+        display: none;
+    }
+}
