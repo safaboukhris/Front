@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import {getDownloadURL, getStorage,ref, uploadBytesResumable} from "firebase/storage";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import {deleteUser,updateUser  } from "../../redux/slices/userSlice";
+import {deleteUser,updateUser,getuser  } from "../../redux/slices/userSlice";
 import {app} from "../../firebase";
 import { MdDelete } from "react-icons/md";
 
@@ -29,6 +29,7 @@ const Profile = () => {
                 handleFileUpload(image);
             }
         },[image]);
+       
         const handleFileUpload = async(image)=>{
             const storage = getStorage(app);
             const fileName = new Date().getTime()+ image.name;  //create a unique name for the image to be stored in the firebase cloud storage bucket
@@ -126,6 +127,7 @@ const Profile = () => {
                             });
                         }}>update</button>
             </form>
+           
             <div>
                 <button onClick={handleDeleteUser } className='profileButton'>delete</button>
             </div>
