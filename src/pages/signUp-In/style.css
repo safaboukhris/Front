@@ -104,11 +104,11 @@
     padding:6px 10px;
 }
 .google{
-    background-color: #df4930;
+    background-color: #c0d93f;
     border: #ebd6d2;
 }
 .facebook{
-    background-color: #507cc0;
+    background-color: #008c00;
     border: #507cc0;
 }
 .submit{
@@ -279,8 +279,10 @@
         display: none;
     }
     .registerationTitle{
-        position: relative;
-        top:-5%
+        display: none;
+    }
+    .right p{
+        display: none;
     }
     .submit{
         width: 90%;
@@ -297,7 +299,7 @@
         font-size: 20px;
     }
     .registerationTitle {
-        font-size: 16px;
+        font-size: 12px;
     }
     .registerTitle {
         font-size: 10px;

@@ -86,7 +86,7 @@ const Menu = ({theme,setTheme}) => {
                     <div className='nav-dropdown'>
                         <Link to="/" className='link'><li>Home</li></Link>
                         <Link to="/dashboard" ><li>Dashboard</li></Link>
-                        <Link  to="/addblog"><li>Add blog</li></Link>
+                        <Link  to="/addblog"><li>Add</li></Link>
                         <Link  to="/contact"><li>Contact</li></Link>
                         <div className='searchDivv'>
                             <input type='text' placeholder='Search Blog ' value={search} onChange={e=>setSearch(e.target.value)} className='searchInput'  />

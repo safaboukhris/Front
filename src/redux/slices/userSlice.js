@@ -28,7 +28,7 @@ export const signin = createAsyncThunk(
     export const getuser = createAsyncThunk(
         "/user/getuser", async (_, {rejectWithValue}) => {
             try {
-                const res = await axios.get("/getuser", {
+                const res = await axios.get("/", {
                     headers:{
                         token:localStorage.getItem("token")
                     }
@@ -64,7 +64,7 @@ export const signin = createAsyncThunk(
                             token:localStorage.getItem("token")
                         }
                     })
-                    dispatch(getuser())
+                    // dispatch(getuser())
                     return res.data
                 } catch (error) {
                     return rejectWithValue(error.response.data.msg)
@@ -152,7 +152,7 @@ const userSlice = createSlice({
         [updateUser.pending]: (state) => {state.isLoading= true },
         [updateUser.fulfilled]: (state, action) => {
             state.isLoading= false 
-            state.user = action.payload;
+            state.user = action.payload.user;
             localStorage.setItem('user', JSON.stringify(action.payload));
         },
         [updateUser.rejected]: (state, action) => {
