@@ -51,6 +51,21 @@ const Menu = ({theme,setTheme}) => {
                 window.removeEventListener('scroll', handleScroll);
             };
         }, []);
+
+        //responsive navbar
+        const toggleMenu = () => {
+            const ul = document.querySelector('ul');
+            ul.classList.toggle('open');
+        };
+        
+            useEffect(() => {
+            document.querySelector('.toggle-icon').addEventListener('click', toggleMenu);
+            return () => {
+                document.querySelector('.toggle-icon').removeEventListener('click', toggleMenu);
+            };
+        }, []);
+
+        
     return (
         <div className={`formnavbar ${isSticky ? 'sticky' : ''}`}>
             <img src={theme === "light" ? pepiniere : lightPep } alt="pepiniere" className='logo'/>
