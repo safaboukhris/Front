@@ -117,52 +117,8 @@ ul li:hover{
 
 /* responsive css */
 @media screen  and (max-width : 425px){
-    .formnavbar{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin:auto;
-        padding:auto;
-    }
-    .nav-dropdown{
-        display: flex;
-        flex-direction: column;
-    }
-    .logoTitle{
-        display:none;
-    }
-    .logo{
-        display:none;
-    }
-    .searchButton{
-        display:none;
-    }
-    .searchInput{
-        width: 60px;
-        margin: auto auto auto 30px;
-    }
-    .userNamee{
-        display: none;
-        margin: auto;
-    }
-    .toggle-icon{
-        width: 20px;
-        margin:auto ;
-    }
-    .link{
-        margin: auto;
-        text-align:center;
-    }
-    .logoutIcon{
-        width: 10px;
-        margin:20px auto auto auto ;
-    }
-}
-
-/* responsive menu */
-@media screen and (max-width: 768px) {
     .formnavbar {
+        display: flex;
         flex-direction: column;
         align-items: center;
         margin:auto;
@@ -175,27 +131,77 @@ ul li:hover{
         display: none;
         flex-direction: column;
         margin-top: 20px;
+        padding-left: 10px;
     }
 
     ul.open {
         display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     ul li {
         display: block;
-        margin: 10px 0;
+        margin: 7px 7px;
     }
 
     .searchInput {
-        margin-left: auto;
+        display: none;
     }
 
     .toggle-icon {
-        margin-left: 0;
-        margin-right: 20px;
+        display: none;
     }
     .searchButton {
         display: none;
+    }
+    .logoutIcon{
+        margin-left: 8px;
+    }
+}
+
+/* responsive menu */
+@media screen and (max-width: 768px) {
+    .formnavbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin:auto;
+        padding:auto;
+    }
+    .logoTitle {
+        margin-top: 0;
+    } 
+    ul {
+        display: none;
+        flex-direction: column;
+        margin-top: 20px;
+        padding-left: 10px;
+    }
+
+    ul.open {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ul li {
+        display: block;
+        margin: 7px 10px;
+    }
+
+    .searchInput {
+        display: none;
+    }
+
+    .toggle-icon {
+        display: none;
+    }
+    .searchButton {
+        display: none;
+    }
+    .logoutIcon{
+        margin-left: 8px;
     }
 }
 @media screen and (max-width: 576px) {
@@ -210,10 +216,13 @@ ul li:hover{
     }
 
     .searchInput {
-        font-size: 14px; 
+        display: none;
     }
 
     .searchButton {
         display: none;
+    }
+    .logoutIcon{
+        margin-left: 8px;
     }
 }

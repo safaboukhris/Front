@@ -58,18 +58,24 @@ const Menu = ({theme,setTheme}) => {
             ul.classList.toggle('open');
         };
         
-            useEffect(() => {
-            document.querySelector('.toggle-icon').addEventListener('click', toggleMenu);
+        //     useEffect(() => {
+        //     document.querySelector('.toggle-icon').addEventListener('click', toggleMenu);
+        //     return () => {
+        //         document.querySelector('.toggle-icon').removeEventListener('click', toggleMenu);
+        //     };
+        // }, []);
+        useEffect(() => {
+            const logoTitleLink = document.querySelector('.logoTitleLink');
+            logoTitleLink.addEventListener('click', toggleMenu);
             return () => {
-                document.querySelector('.toggle-icon').removeEventListener('click', toggleMenu);
+                logoTitleLink.removeEventListener('click', toggleMenu);
             };
-        }, []);
+            }, []);
 
-        
     return (
         <div className={`formnavbar ${isSticky ? 'sticky' : ''}`}>
             <img src={theme === "light" ? pepiniere : lightPep } alt="pepiniere" className='logo'/>
-            <Link to="/home" className='logoTitleLink'><span className='logoTitle'>Plant Nursery</span></Link>
+            <p className='logoTitleLink'><span className='logoTitle'>Plant Nursery</span></p>
             <img onClick={()=>{toggle_mode()}} src={theme =="light" ? dark : light} alt="" className='toggle-icon'/>
             <ul>
                 
