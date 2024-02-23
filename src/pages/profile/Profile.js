@@ -30,7 +30,7 @@ const Profile = () => {
         },[image]);
        
         const handleFileUpload = async(image)=>{
-            const storage = getStorage(app);
+            const storage = getStorage();
             const fileName = new Date().getTime()+ image.name;  //create a unique name for the image to be stored in the firebase cloud storage bucket
             const storageRef = ref(storage, fileName);
             const uploadTask = uploadBytesResumable(storageRef, image);
