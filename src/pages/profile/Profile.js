@@ -6,7 +6,6 @@ import {getDownloadURL, getStorage,ref, uploadBytesResumable} from "firebase/sto
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import {deleteUser,updateUser,getuser  } from "../../redux/slices/userSlice";
-import {app} from "../../firebase";
 import { MdDelete } from "react-icons/md";
 
 
